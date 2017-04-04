@@ -1,4 +1,7 @@
 {
     "version": 1.0,
-    "namespace": "timefairy"
+    "namespace": "timefairy",
+    "names": {
+        "/": "timefairy/shared"
+    }
 }
