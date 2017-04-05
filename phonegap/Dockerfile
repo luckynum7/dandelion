@@ -19,7 +19,8 @@ RUN set -ex \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
   done
 
-RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
+RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 && \
+                  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
                   asdf install nodejs 6.10.2 && \
                   asdf global nodejs 6.10.2 && \
                   rm -rf $HOME/.npm && \

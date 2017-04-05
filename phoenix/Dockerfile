@@ -24,11 +24,12 @@ RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.
                   rm -rf /tmp/*"
 
 ## phoenix-framework
+ARG PHX_URL=https://github.com/phoenixframework/archives/raw/master/
+
 RUN /bin/bash -c "source ~/.bashrc && \
                   mix local.hex --force && \
                   mix local.rebar --force && \
-                  mix archive.install \
-                  https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.2.1.ez -force"
+                  mix archive.install $PHX_URL/phoenix_new-1.2.1.ez --force"
 
 ## /build
 WORKDIR /build
