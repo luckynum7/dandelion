@@ -4,11 +4,25 @@
 #+STARTUP: content
 #+REPO:    https://gitlab.com/luckynum7/zcmu-pbl-ol
 
+* Commands
+
+#+BEGIN_SRC bash
+## install shipwright
+pip install --user shipwright
+
+## build images
+shipwright build
+
+## push to docker hub
+shipwright push
+#+END_SRC
+
 * Phoenix framework
 ** phxbase
 ** erlang
 ** elixir
 ** phoenix
+
 * Phonegap
 ** pgbase
 ** java
