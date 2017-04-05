@@ -22,7 +22,7 @@ RUN apt-get update -qq && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /usr/share/doc/*
 
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 
 RUN useradd -ms $(which bash) asdf
 
