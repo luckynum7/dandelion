@@ -1,6 +1,8 @@
-FROM timefairy/elixir
+FROM timefairy/android-tools
 
-## nodejs
+ENV PATH=/home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
+
+## asdf, nodejs
 # Ref: https://github.com/nodejs/docker-node
 # gpg keys listed at https://github.com/nodejs/node#release-team
 RUN set -ex \
@@ -23,12 +25,12 @@ RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.
                   rm -rf $HOME/.npm && \
                   rm -rf /tmp/*"
 
-## pheonix-framework
-RUN /bin/bash -c "source ~/.bashrc && \
-                  mix local.hex --force && \
-                  mix local.rebar --force && \
-                  mix archive.install \
-                  https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.2.1.ez -force"
+## phonegap
+
+RUN /bin/bash -c "npm install -g phonegap@6.4.6 \
+                                 plugman@1.4.1 && \
+                  rm -rf $HOME/.npm && \
+                  rm -rf /tmp/*"
 
 ## /build
 WORKDIR /build
