@@ -2,7 +2,6 @@ FROM timefairy/android-tools
 
 ENV PATH=/home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
 
-## asdf, nodejs
 # Ref: https://github.com/nodejs/docker-node
 # gpg keys listed at https://github.com/nodejs/node#release-team
 RUN set -ex \
@@ -19,6 +18,7 @@ RUN set -ex \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
   done
 
+## asdf, nodejs
 RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 && \
                   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
                   asdf install nodejs 6.10.2 && \

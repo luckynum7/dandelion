@@ -1,6 +1,5 @@
 FROM timefairy/elixir
 
-## nodejs
 # Ref: https://github.com/nodejs/docker-node
 # gpg keys listed at https://github.com/nodejs/node#release-team
 RUN set -ex \
@@ -17,6 +16,7 @@ RUN set -ex \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
   done
 
+## nodejs
 RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
                   asdf install nodejs 6.10.2 && \
                   asdf global nodejs 6.10.2 && \
