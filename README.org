@@ -1,0 +1,16 @@
+#+TITLE:   Dandelion
+#+DESC:    Dockerfiles for phoenix-framework, phonegap with shipwright
+#+OPTIONS: ^:{} toc:nil
+#+STARTUP: content
+#+REPO:    https://gitlab.com/luckynum7/zcmu-pbl-ol
+
+* Phoenix framework
+** phxbase
+** erlang
+** elixir
+** phoenix
+* Phonegap
+** pgbase
+** java
+** android-tools
+** phonegap
