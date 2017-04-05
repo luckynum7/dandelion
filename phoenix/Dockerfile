@@ -23,7 +23,7 @@ RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.
                   rm -rf $HOME/.npm && \
                   rm -rf /tmp/*"
 
-## pheonix-framework
+## phoenix-framework
 RUN /bin/bash -c "source ~/.bashrc && \
                   mix local.hex --force && \
                   mix local.rebar --force && \
