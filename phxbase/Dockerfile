@@ -12,7 +12,6 @@ RUN apt-get update -qq && \
             unixodbc-dev \
             git \
             curl \
-            zip \
             unzip \
             inotify-tools && \
     apt-get clean -qq -y && \

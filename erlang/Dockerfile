@@ -1,4 +1,4 @@
-FROM timefairy/base
+FROM timefairy/phxbase
 
 ENV PATH=/home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
 
