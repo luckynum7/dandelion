@@ -1,8 +1,8 @@
 #+TITLE:   Dandelion
 #+DESC:    Dockerfiles for phoenix-framework, phonegap with shipwright
+#+REPO:    https://gitlab.com/luckynum7/dandelion
 #+OPTIONS: ^:{} toc:nil
 #+STARTUP: content
-#+REPO:    https://gitlab.com/luckynum7/zcmu-pbl-ol
 
 * Commands
 
