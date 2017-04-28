@@ -11,7 +11,7 @@
 pip install --user shipwright
 
 ## build images
-shipwright build
+shipwright build -t TAGS
 
 ## push to docker hub
 shipwright push

@@ -28,8 +28,9 @@ RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch
 
 ## phonegap
 
-RUN /bin/bash -c "npm install -sg phonegap@6.4.6 \
-                                  plugman@1.4.1 && \
+RUN /bin/bash -c "npm install -sg phonegap@6.5.0 \
+                                  plugman@1.4.1 \
+                                  cordova-icon@0.9.1 && \
                   rm -rf $HOME/.npm && \
                   rm -rf /tmp/*"
 
