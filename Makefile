@@ -3,7 +3,7 @@
 all: build push
 
 build:
-	shipwright build
+	shipwright build -t $(shell git describe --tags)
 
 push:
-	shipwright push -e timefairy/{phoenix,phonegap} -t $(shell git describe --tags)
+	shipwright push -e timefairy/{phoenix,phonegap}
