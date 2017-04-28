@@ -8,7 +8,8 @@ RUN apt-get update -qq && \
             curl \
             git \
             zip \
-            unzip && \
+            unzip \
+            imagemagick && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
     apt-get autoremove -qq -y && \
