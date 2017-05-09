@@ -8,4 +8,4 @@ build:
 	shipwright build -t ${TAG}
 
 push:
-	shipwright push -e timefairy/{phoenix,phonegap} -t ${TAG}
+	shipwright push -t ${TAG}
