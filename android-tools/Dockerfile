@@ -3,8 +3,8 @@ FROM timefairy/java
 # android tools
 
 ENV ANDROID_HOME="/home/asdf/android-sdk" \
-    ANDROID_TARGET_SDK=24 \
-    ANDROID_BUILD_TOOLS=25.0.2 \
+    ANDROID_TARGET_SDK=25 \
+    ANDROID_BUILD_TOOLS=25.0.3 \
     ANDROID_SDK_TOOLS=25.2.5
 
 ENV PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:$PATH
