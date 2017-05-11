@@ -18,8 +18,8 @@ RUN set -ex \
 
 ## nodejs
 RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
-                  asdf install nodejs 6.10.2 && \
-                  asdf global nodejs 6.10.2 && \
+                  asdf install nodejs 7.10.0 && \
+                  asdf global nodejs 7.10.0 && \
                   rm -rf $HOME/.npm && \
                   rm -rf /tmp/*"
 
