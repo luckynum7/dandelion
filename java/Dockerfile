@@ -21,7 +21,9 @@ RUN /bin/bash -c "source \"$HOME/.sdkman/bin/sdkman-init.sh\" && \
 
 ## gradle
 
-ENV GRADLE_USER_HOME="/build/.gradle"
+ENV GRADLE_HOME="/home/asdf/.sdkman/candidates/gradle/current" GRADLE_USER_HOME="/build/.gradle"
+
+ENV PATH=${GRADLE_HOME}/bin:$PATH
 
 RUN /bin/bash -c "source \"$HOME/.sdkman/bin/sdkman-init.sh\" && \
                   sdk install gradle 2.14.1 && \
