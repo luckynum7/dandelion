@@ -14,7 +14,7 @@ pip install --user shipwright
 shipwright build
 
 ## push to docker hub
-shipwright push -e timefairy/{phoenix,phonegap} -t $(git describe --tags)
+shipwright push
 #+END_SRC
 
 * Phoenix framework
