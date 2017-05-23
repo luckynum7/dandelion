@@ -13,7 +13,8 @@ RUN apt-get update -qq && \
             git \
             curl \
             unzip \
-            inotify-tools && \
+            inotify-tools \
+            liblz4-tool && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
     apt-get autoremove -qq -y && \
